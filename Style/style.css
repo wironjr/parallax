@@ -24,9 +24,13 @@ p{
 
 /*efeito parallax*/
 .caixa1, .caixa2, .caixa3, .caixa4{
-	border: 1px solid red;
+	position: relative;
 	height: 100%;
 	/*opacity: 0.7;*/
+	background-repeat: no-repeat;
+	background-size: cover; /*cubrir toda a area do conteiner*/
+	background-position: center;
+	background-attachment: fixed;
 }
 .caixa1{
 	background-image: url(../imagens/imagem1.jpg);
@@ -42,4 +46,21 @@ p{
 
 .caixa4{
 	background-image: url(../imagens/imagem4.jpg);
+}
+
+.conteudo-titulo{
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+}
+
+.conteudo-titulo span.titulo{
+	background-color: #111;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 5px;
+	color: #fff;
+	text-transform: uppercase;
 }
